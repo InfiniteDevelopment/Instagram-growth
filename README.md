@@ -35,12 +35,25 @@ In the end the code for the crontab looks like this
 0 * * * * php /PATH_TO_SCRIPT/classes.instagram.php > /dev/null 2>/dev/null &
 ```
 
+A great guide on how to do other settings with the cronjob
 http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
 
 
 ## Requirements
 ### cURL
+
+I believe that the package php5-curl should do the trick. Use the package manager of your choice and the deps should be taken care of.
+```
+sudo apt-get install php5-curl
+```
+You will need to restart the server afterwards:
+```
+sudo service apache2 restart
+```
+Reference
+http://askubuntu.com/questions/9293/how-do-i-install-curl-in-php5
+
 
 ## TL;DR
 ### Time between likes
