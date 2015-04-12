@@ -1,5 +1,6 @@
 # Instagram-growth
 Grow your Instagram follower base using this script.
+This will use your own account to get real followers that interact with the tags your setup.
 
 Follow me @doefler on twitter to know about updates on this scipt.
 Please let me know if you would like any other cool features or how this script works for you.
@@ -7,6 +8,37 @@ Please let me know if you would like any other cool features or how this script 
 The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.
 
 ## Setup
+### Download the script to your server
+
+### Edit the config file (config.php)
+```PHP
+$conf = array(
+	'username' => 'YOUR_USERNAME',
+	'access_token' => 'YOUR_ACCESS_TOKEN',
+	'debugging' => true,
+	'like' => array(
+		'do' => true,
+		'min_likes' => 20,
+		'max_likes' => 0
+		),
+	'follow' => array(
+		'do' => true,
+		'min_likes' => 50,
+		'max_likes' => 0,
+		'like_recent' => array(
+				'do' => true,
+				'count' => 3
+			)
+		),
+	'comment' => array(
+		'do' => false,
+		'min_likes' => 80,
+		'max_likes' => 0
+		)
+);
+```
+
+
 ### access_token
 Get new token https://instagram.com/developer/api-console/
 #### Step 1
@@ -14,7 +46,7 @@ Start by authenticating the console by signing in with your own instagram
 Click "OAuth 2" in the dropdown box
 ![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/get-authentication.png)
 Then click the "Sign in with Instagram" button
-![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/sign-in-with-instagram.png)
+![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/signin-with-instagram.png)
 #### Step 2
 Select a one of the urls from the pull out menu on the left
 Run this request by clicking the orange "Send" button on the right
