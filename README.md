@@ -9,8 +9,14 @@ The maximum number of requests per hour has been exceeded. You have made 46 requ
 
 ## Setup
 ### Download the script to your server
+Download the files to a folder on your server.
+You need both the config.php and instagram-growth.php file
+Before it can run you need to update the config.php file.
 
 ### Edit the config file (config.php)
+You need to configure all the fields. And replace the UPPERCASE text with your own information
+I already provided a default setup.
+To get your access_token see the guide below.
 ```PHP
 $conf = array(
 	'username' => 'YOUR_USERNAME',
@@ -37,7 +43,35 @@ $conf = array(
 		)
 );
 ```
+### Select the tags you want the script to explore
+```PHP
+$tags = array(	
+	'TAG_1',
+	'TAG_2',
+	'TAG_3',
+);
+```
+### Automatic commenting
+If you want the script to comment on your behalf you should change the predefined texts to something that makes sense to your customers.
+Make sure to change the UPPERCASE text to your information.
+```PHP
+$hello = array(	
+	'Hey',
+	'Hello',
+	'Hey there',
+	'Hi',
+);
 
+$praise = array(	
+	', your picture is really nice',
+	', you should visit on YOUR_WEBSITE',
+	', cool stuff',
+	', have you seen YOUR_BRAND_NAME?',
+);
+```
+The script will automaticly add the users name between between the "hello" and "praise" text.
+For example a generated comment could be something like:
+"Hi Mark Anders your picture is really nice"
 
 ### access_token
 Get new token https://instagram.com/developer/api-console/
