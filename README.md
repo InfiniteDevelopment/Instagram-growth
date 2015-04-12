@@ -12,17 +12,17 @@ Get new token https://instagram.com/developer/api-console/
 #### Step 1
 Start by authenticating the console by signing in with your own instagram
 Click "OAuth 2" in the dropdown box
-![](https://github.com/doefler/Instagram-growth/img/get-authentication.png)
+![](https://github.com/doefler/Instagram-growth/master/img/get-authentication.png)
 Then click the "Sign in with Instagram" button
-![](https://github.com/doefler/Instagram-growth/img/sign-in-with-instagram.png)
+![](https://github.com/doefler/Instagram-growth/master/img/sign-in-with-instagram.png)
 #### Step 2
 Select a one of the urls from the pull out menu on the left
 Run this request by clicking the orange "Send" button on the right
-![](https://github.com/doefler/Instagram-growth/img/select-a-url-to-run.png)
+![](https://github.com/doefler/Instagram-growth/master/img/select-a-url-to-run.png)
 #### Step 3
 Your access token for the config can now be found in the left window with the headline "Request"
 Copy the value of the access_token (Be aware that it extends to the right behind the vertical window divider)
-![](https://github.com/doefler/Instagram-growth/img/select-the-access-token.png)
+![](https://github.com/doefler/Instagram-growth/master/img/select-the-access-token.png)
 
 
 
