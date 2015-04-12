@@ -8,7 +8,8 @@ Please let me know if you would like any other cool features or how this script 
 Have a look at instagrams api to better understand how the script works
 https://instagram.com/developer/
 
-The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.
+I don't support this automatic bot behavior myself and neither does instagram.
+Use this script at your own risk!!!
 
 #### The script requires
 * A server running PHP
@@ -50,7 +51,17 @@ $conf = array(
 		)
 );
 ```
-Set `'debugging' => false` if you are not interested in what the script does.
+Set `'debugging' => false` if you are not interested in seeing an output of what the script does.
+It can be useful to see if you test it in the browser.
+
+
+| like  		| desciption	| Possible values	|
+| ------------- | ------------- | ------------- |
+| do			| Should this action be performed  | `true`/`false`  |
+| min_likes     | If you only want to like when the images has more than a certain amount of likes already  | `0` = no limit / `20` = more than 20 likes  |
+| max_likes     | Content Cell  | Content Cell  |
+
+
 
 ### Select the tags you want the script to explore
 ```PHP
@@ -152,8 +163,9 @@ http://askubuntu.com/questions/9293/how-do-i-install-curl-in-php5
 
 ## TL;DR
 ### Time between likes
-### Relikes the same content
+The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.
 
+### Relikes the same content
 
 ### Best practices for gaining instagram followers
 http://austenallred.com/user-acquisition/book/chapter/instagram/
