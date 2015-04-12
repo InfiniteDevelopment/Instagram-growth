@@ -9,6 +9,24 @@ The maximum number of requests per hour has been exceeded. You have made 46 requ
 ## Setup
 ### access_token
 Get new token https://instagram.com/developer/api-console/
+#### Step 1
+Start by authenticating the console by signing in with your own instagram
+Click "OAuth 2" in the dropdown box
+![](https://github.com/doefler/Instagram-growth/img/get-authentication.png)
+Then click the "Sign in with Instagram" button
+![](https://github.com/doefler/Instagram-growth/img/sign-in-with-instagram.png)
+#### Step 2
+Select a one of the urls from the pull out menu on the left
+Run this request by clicking the orange "Send" button on the right
+![](https://github.com/doefler/Instagram-growth/img/select-a-url-to-run.png)
+#### Step 3
+Your access token for the config can now be found in the left window with the headline "Request"
+Copy the value of the access_token (Be aware that it extends to the right behind the vertical window divider)
+![](https://github.com/doefler/Instagram-growth/img/select-the-access-token.png)
+
+
+
+
 ### cronjob (optional)
 Run this script periodically with a cronjob.
 Add a cronjob in linux
@@ -43,11 +61,11 @@ http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 ## Requirements
 ### cURL
 
-I believe that the package php5-curl should do the trick. Use the package manager of your choice and the deps should be taken care of.
+Install the curl module for PHP using the package manager
 ```
 sudo apt-get install php5-curl
 ```
-You will need to restart the server afterwards:
+You will need to restart the server afterwards
 ```
 sudo service apache2 restart
 ```
