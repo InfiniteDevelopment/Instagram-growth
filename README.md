@@ -84,7 +84,7 @@ It can be useful to see if you test it in the browser.
 #### Like parameters
 Choose when and if the script should like images
 
-| like  		| desciption	| Possible values	|
+| Like  		| Desciption	| Possible values	|
 | ------------- | ------------- | ------------- |
 | do			| Should this action be performed  | `true`/`false`  |
 | min_likes     | If you only want to like when the images has more than a certain amount of likes already  | `0` = no limit / `20` = more than 20 likes  |
@@ -93,7 +93,7 @@ Choose when and if the script should like images
 #### Follow parameters
 Choose when and if the script should follow the user that uploaded an image
 
-| follow  		| desciption	| Possible values	|
+| Follow  		| Desciption	| Possible values	|
 | ------------- | ------------- | ------------- |
 | do			| Should this action be performed  | `true`/`false`  |
 | min_likes     | If you only want to follow users when the images has more than a certain amount of likes  | `0` = no limit / `20` = more than 20 likes  |
@@ -106,7 +106,7 @@ This feature could quickly feel like a bot for the user.
 But it does use a random comment generating feature.
 Set `'do' => true` if you want to try it. And don't forget to configure the "hello" and "praise" texts in the config file.
 
-| follow  		| desciption	| Possible values	|
+| Comment  		| Desciption	| Possible values	|
 | ------------- | ------------- | ------------- |
 | do			| Should this action be performed  | `true`/`false`  |
 | min_likes     | If you only want to comment on images when they has more than a certain amount of likes  | `0` = no limit / `20` = more than 20 likes  |
@@ -167,7 +167,7 @@ Copy the value of the access_token and insert into the config.php file (Be aware
 
 
 
-### cronjob (optional)
+### Cronjob (optional)
 Run this script periodically with a cronjob.
 Add a cronjob in linux
 
