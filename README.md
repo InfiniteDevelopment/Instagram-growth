@@ -191,6 +191,10 @@ In the end the code for the crontab looks like this
 0 * * * * php /PATH_TO_SCRIPT/instagram-growth.php > /dev/null 2>/dev/null &
 ```
 
+#### Save and close
+In `vi` press esc to switch to the command mode, then type `:wq` to write (w) and quit (q) and press Enter.
+In `nano` press CTRL + x, then press y for yes and provide a filename before pressing Enter
+
 A great guide on how to do other settings with the cronjob
 http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
