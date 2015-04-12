@@ -29,8 +29,8 @@ $conf = array(
 );
 
 # Insert the tags you want to explore with the script
-# Be aware that the more tags you add, the longer time the script will take to perform
-# And the more request the script will perform which will make banning likely.
+# Exclude the hashtag itself "#" when you write your tags
+# Be aware that the more tags you add, the longer time the script will take to perform.
 $tags = array(	
 	'TAG_1',
 	'TAG_2',

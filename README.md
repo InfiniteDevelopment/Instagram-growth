@@ -114,6 +114,8 @@ Set `'do' => true` if you want to try it. And don't forget to configure the "hel
 
 
 ### Select the tags you want the script to explore
+Exclude the hashtag itself "#" when you write your tags.
+Be aware that the more tags you add, the longer time the script will take to perform.
 ```PHP
 $tags = array(	
 	'TAG_1',
