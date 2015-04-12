@@ -1,9 +1,12 @@
 # Instagram-growth
 Grow your Instagram follower base using this script.
-This will use your own account to get real followers that interact with the tags your setup.
+This will use your own account to get real followers that interact with the tags your choose.
+
+![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/cover.png)
 
 Follow me @doefler on twitter to know about updates on this scipt.
 Please let me know if you would like any other cool features or how this script works for you.
+https://twitter.com/doefler
 
 Have a look at instagrams api to better understand how the script works
 https://instagram.com/developer/
@@ -59,7 +62,7 @@ It can be useful to see if you test it in the browser.
 | ------------- | ------------- | ------------- |
 | do			| Should this action be performed  | `true`/`false`  |
 | min_likes     | If you only want to like when the images has more than a certain amount of likes already  | `0` = no limit / `20` = more than 20 likes  |
-| max_likes     | Content Cell  | Content Cell  |
+| max_likes     | The opposite of min_likes. This limits the action to perfom only on images that has less than a certain amount of likes  | `0` = no limit / `20` = less than 20 likes  |
 
 
 
