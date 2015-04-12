@@ -1,5 +1,6 @@
 <?php 
 
+# Include the configurations you have made to the script
 include_once('config.php');
 
 # This varible help stop the script if it has performed too many requests to the API

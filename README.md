@@ -5,7 +5,14 @@ This will use your own account to get real followers that interact with the tags
 Follow me @doefler on twitter to know about updates on this scipt.
 Please let me know if you would like any other cool features or how this script works for you.
 
+Have a look at instagrams api to better understand how the script works
+https://instagram.com/developer/
+
 The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.
+
+#### The script requires
+* A server running PHP
+* The PHP curl module
 
 ## Setup
 ### Download the script to your server
@@ -43,6 +50,8 @@ $conf = array(
 		)
 );
 ```
+Set `'debugging' => false` if you are not interested in what the script does.
+
 ### Select the tags you want the script to explore
 ```PHP
 $tags = array(	
@@ -74,7 +83,9 @@ For example a generated comment could be something like:
 "Hi Mark Anders your picture is really nice"
 
 ### access_token
-Get new token https://instagram.com/developer/api-console/
+Get new token at https://apigee.com/console/instagram
+And follow the guide below.
+
 #### Step 1
 Start by authenticating the console by signing in with your own instagram
 Click "OAuth 2" in the dropdown box
@@ -125,7 +136,7 @@ http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
 
 ## Requirements
-### cURL
+### Curl
 
 Install the curl module for PHP using the package manager
 ```
