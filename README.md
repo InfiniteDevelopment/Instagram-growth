@@ -18,11 +18,26 @@ Open the cronjob editor in linux shell
 ```
 $ crontab -e
 ```
+Run the script once an hour at xx:00 o'clock
+```
+0 * * * * /path to script
+```
+The code to run the script
+```
+php /web/api/classes.instagram.php
+```
+To prevent the code from waiting for the output of the script we add a little something to the end of it
+```
+php /web/api/classes.instagram.php > /dev/null 2>/dev/null &
+```
+In the end the code for the crontab looks like this
+```
+0 * * * * php /web/api/classes.instagram.php > /dev/null 2>/dev/null &
+```
 
 http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
-The code to run the script
-php /web/api/classes.instagram.php > /dev/null 2>/dev/null &
+
 
 ## Requirements
 ### cURL
