@@ -56,7 +56,8 @@ $conf = array(
 ```
 Set `'debugging' => false` if you are not interested in seeing an output of what the script does.
 It can be useful to see if you test it in the browser.
-
+#### Like parameters
+Choose when and if the script should like images
 
 | like  		| desciption	| Possible values	|
 | ------------- | ------------- | ------------- |
@@ -64,6 +65,27 @@ It can be useful to see if you test it in the browser.
 | min_likes     | If you only want to like when the images has more than a certain amount of likes already  | `0` = no limit / `20` = more than 20 likes  |
 | max_likes     | The opposite of min_likes. This limits the action to perfom only on images that has less than a certain amount of likes  | `0` = no limit / `20` = less than 20 likes  |
 
+#### Follow parameters
+Choose when and if the script should follow the user that uploaded an image
+
+| follow  		| desciption	| Possible values	|
+| ------------- | ------------- | ------------- |
+| do			| Should this action be performed  | `true`/`false`  |
+| min_likes     | If you only want to follow users when the images has more than a certain amount of likes  | `0` = no limit / `20` = more than 20 likes  |
+| max_likes     | The opposite of min_likes. This limits the action to perfom only on images that has less than a certain amount of likes  | `0` = no limit / `20` = less than 20 likes  |
+| like_recent     | If enabled, the script likes the selected amount of recent images by the followed user  | do:`true`/`false` AND count: `3` = likes the 3 most recent images  |
+
+#### Comment parameters
+Choose when and if the script should comment on the image.
+This feature could quickly feel like a bot for the user. 
+But it does use a random comment generating feature.
+Set `'do' => true` if you want to try it. And don't forget to configure the "hello" and "praise" texts in the config file.
+
+| follow  		| desciption	| Possible values	|
+| ------------- | ------------- | ------------- |
+| do			| Should this action be performed  | `true`/`false`  |
+| min_likes     | If you only want to comment on images when they has more than a certain amount of likes  | `0` = no limit / `20` = more than 20 likes  |
+| max_likes     | The opposite of min_likes. This limits the action to perfom only on images that has less than a certain amount of likes  | `0` = no limit / `20` = less than 20 likes  |
 
 
 ### Select the tags you want the script to explore
