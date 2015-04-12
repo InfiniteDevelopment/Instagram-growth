@@ -8,11 +8,27 @@ Follow me @doefler on twitter to know about updates on this scipt.
 Please let me know if you would like any other cool features or how this script works for you.
 https://twitter.com/doefler
 
-Have a look at instagrams api to better understand how the script works
+Have a look at instagrams api to better understand how the script works.
 https://instagram.com/developer/
+
+I developed this script for growing the awareness around https://artboost.com
+Thought it would nice to share it with the world and help other startups.
 
 I don't support this automatic bot behavior myself and neither does instagram.
 Use this script at your own risk!!!
+
+The script does not save any information about which images get liked, what user get followed and so on.
+That means that it can possibly keep acting on the same items over and over again.
+Feel free to edit the script to behave more intelligent in that sense and save a record of the actions in a database.
+
+You might get an error like this:
+`The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.`
+Then wait a while before running the script again.
+
+### Best practices for gaining instagram followers
+http://austenallred.com/user-acquisition/book/chapter/instagram/
+
+
 
 #### The script requires
 * A server running PHP
@@ -184,13 +200,3 @@ sudo service apache2 restart
 ```
 Reference
 http://askubuntu.com/questions/9293/how-do-i-install-curl-in-php5
-
-
-## TL;DR
-### Time between likes
-The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.
-
-### Relikes the same content
-
-### Best practices for gaining instagram followers
-http://austenallred.com/user-acquisition/book/chapter/instagram/
