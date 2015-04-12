@@ -7,7 +7,7 @@ include_once('config.php');
 $break = false;
 
 # Define the varible for later use
-$like_recent = [];
+$like_recent = array();
 
 
 foreach ($tags as $i => $tag) {
