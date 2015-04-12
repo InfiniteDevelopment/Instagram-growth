@@ -38,19 +38,19 @@ $ crontab -e
 ```
 Run the script once an hour at xx:00 o'clock
 ```
-0 * * * * /path to script
+0 * * * * /PATH_TO_SCRIPT/FILE.PHP
 ```
 The code to run the script
 ```
-php /PATH_TO_SCRIPT/classes.instagram.php
+php /PATH_TO_SCRIPT/instagram-growth.php
 ```
 To prevent the code from waiting for the output of the script we add a little something to the end of it
 ```
-php /PATH_TO_SCRIPT/classes.instagram.php > /dev/null 2>/dev/null &
+php /PATH_TO_SCRIPT/instagram-growth.php > /dev/null 2>/dev/null &
 ```
 In the end the code for the crontab looks like this
 ```
-0 * * * * php /PATH_TO_SCRIPT/classes.instagram.php > /dev/null 2>/dev/null &
+0 * * * * php /PATH_TO_SCRIPT/instagram-growth.php > /dev/null 2>/dev/null &
 ```
 
 A great guide on how to do other settings with the cronjob
