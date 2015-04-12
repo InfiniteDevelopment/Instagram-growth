@@ -159,7 +159,7 @@ Run this request by clicking the orange "Send" button on the right
 ![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/select-a-url-to-run.png)
 #### Step 3
 Your access token for the config can now be found in the left window with the headline "Request"
-Copy the value of the access_token (Be aware that it extends to the right behind the vertical window divider)
+Copy the value of the access_token and insert into the config.php file (Be aware that it extends to the right behind the vertical window divider).
 ![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/select-the-access-token.png)
 
 
