@@ -13,6 +13,7 @@ https://instagram.com/developer/
 
 I developed this script for growing the awareness around https://artboost.com
 Thought it would nice to share it with the world and help other startups.
+So they can survive with minimal marketing budget.
 
 I don't support this automatic bot behavior myself and neither does instagram.
 Use this script at your own risk!!!
@@ -25,7 +26,7 @@ You might get an error like this:
 `The maximum number of requests per hour has been exceeded. You have made 46 requests of the 30 allowed in the last hour.`
 Then wait a while before running the script again.
 
-### Best practices for gaining instagram followers
+#### Best practices for gaining instagram followers
 http://austenallred.com/user-acquisition/book/chapter/instagram/
 
 
@@ -34,11 +35,19 @@ http://austenallred.com/user-acquisition/book/chapter/instagram/
 * A server running PHP
 * The PHP curl module
 
+#### Getting started
+* Download the script to your server
+* Edit the config file (config.php)
+* Select the tags you want the script to explore
+* Automatic commenting
+* Get an access token from instagram
+* Setup as cronjob (optional)
+* Check the requirements for setting up curl
+
 ## Setup
 ### Download the script to your server
 Download the files to a folder on your server.
-You need both the config.php and instagram-growth.php file
-Before it can run you need to update the config.php file.
+You need both the config.php and instagram-growth.php file before it can run you need to update the config.php file.
 
 ### Edit the config file (config.php)
 You need to configure all the fields. And replace the UPPERCASE text with your own information
@@ -134,7 +143,7 @@ The script will automaticly add the users name between between the "hello" and "
 For example a generated comment could be something like:
 "Hi Mark Anders your picture is really nice"
 
-### access_token
+### Get an access token from instagram
 Get new token at https://apigee.com/console/instagram
 And follow the guide below.
 
