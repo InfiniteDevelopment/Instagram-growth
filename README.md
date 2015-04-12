@@ -165,8 +165,6 @@ Copy the value of the access_token and insert into the config.php file (Be aware
 ![](https://raw.githubusercontent.com/doefler/Instagram-growth/master/img/select-the-access-token.png)
 
 
-
-
 ### Cronjob (optional)
 Run this script periodically with a cronjob.
 Add a cronjob in linux
@@ -178,7 +176,7 @@ $ crontab -e
 ```
 Run the script once an hour at xx:00 o'clock
 ```
-0 * * * * /PATH_TO_SCRIPT/FILE.PHP
+0 * * * * SCRIPT_TO_RUN
 ```
 The code to run the script
 ```
